@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinemaVerse - Movie Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>CinemaVerse</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Book Tickets</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Cinemas</a></li>
+                <li><a href="#">Offers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="movie-selection">
+            <h2>Select a Movie</h2>
+            <div class="movie-container">
+                <select id="movie">
+                    <option value="12">Avengers: Endgame (rupees-300)</option>
+                    <option value="10">Inception (rupees-400)</option>
+                    <option value="8">The Shawshank Redemption (rupees-200)</option>
+                    <option value="9">The Dark Knight (rupees-350)</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="seat-selection">
+            <h2>Select Your Seats</h2>
+            <ul class="showcase">
+                <li>
+                    <div class="seat"></div>
+                    <small>Available</small>
+                </li>
+                <li>
+                    <div class="seat selected"></div>
+                    <small>Selected</small>
+                </li>
+                <li>
+                    <div class="seat occupied"></div>
+                    <small>Occupied</small>
+                </li>
+            </ul>
+
+            <div class="container">
+                <div class="screen"></div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking-summary">
+            <h2>Booking Summary</h2>
+            <p class="text">
+                You have selected <span id="count">0</span> seats for a total price of $<span id="total">0</span>
+            </p>
+            <button id="book-btn">Book Now</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 CinemaVerse. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
